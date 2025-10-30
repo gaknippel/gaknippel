@@ -3,6 +3,4 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gaknippel&layout=compact&theme=tokyonight" />
 </div>
 
-<img src="./steamhappy-steam.gif" width="200" />
-
 ![Banner](./steamhappy-steam.gif)
