@@ -1,5 +1,3 @@
-<a href="https://github.com/gaknippel/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats-five-fawn-23.vercel.app//api?username=gaknippel"/>
-</a>
+[![Top Langs](https://github-readme-stats-five-fawn-23.vercel.app//api/top-langs/?username=gaknippel&layout=pie)](https://github.com/gaknippel/github-readme-stats)
 
 ![Banner](./steamhappy-steam.gif)
