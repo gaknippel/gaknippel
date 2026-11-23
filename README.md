@@ -1,4 +1,4 @@
-[![Contribution Activity](https://github-readme-stats-five-fawn-23.vercel.app/api/activity?username=gaknippel&theme=requiem&texture=metal&custom_title=Greyson%20Knippel)](https://github.com/gaknippel/github-readme-stats)
+[![GitHub activity and most used languages](./card/stats.svg)](https://github.com/gaknippel)
 
 ![Banner](./steamhappy-steam.gif)
 

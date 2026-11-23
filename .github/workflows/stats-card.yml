@@ -1,0 +1,25 @@
+name: stats card
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      # The built-in token only sees public repos; add a STATS_TOKEN secret (a PAT) to count private ones too.
+      - run: node card/make-card.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+      - run: |
+          git diff --quiet card/stats.svg && exit 0
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898283+github-actions[bot]@users.noreply.github.com'
+          git commit -am 'Update stats card'
+          git push
