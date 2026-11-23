@@ -83,7 +83,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
   @font-face { font-family: Mavora; src: url(data:font/woff2;base64,${b64('mavora.woff2')}) format('woff2'); }
   @font-face { font-family: Geist; font-weight: 100 900; src: url(data:font/woff2;base64,${b64('geist.woff2')}) format('woff2'); }
   text { font-family: Geist, sans-serif; fill: #000; }
-  .head { font-family: Mavora, sans-serif; fill: #fff; font-size: 44px; }
+  .head { font-family: Mavora, sans-serif; fill: #fff; font-size: 72px; }
   .sub { font-family: Mavora, sans-serif; font-size: 22px; }
   .big { font-size: 22px; font-weight: 600; }
   .lang { font-size: 20px; font-weight: 600; }
@@ -105,7 +105,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
 </style>
 <rect width="${W}" height="${H}" fill="#fff"/>
 <rect width="${W}" height="96" fill="#000"/>
-<text x="34" y="66" class="head" textLength="${W - 68}" lengthAdjust="spacingAndGlyphs">GITHUB ACTIVITY</text>
+<text x="34" y="74" class="head" textLength="${W - 68}" lengthAdjust="spacingAndGlyphs">ACTIVITY</text>
 
 <text x="48" y="132" class="big">${cal.totalContributions.toLocaleString('en-US')} contributions in the last year</text>
 <path d="${area}" fill="#000" fill-opacity="0.07"/>
